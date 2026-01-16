@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Math Prep | მათემატიკის მომზადება</title>
+    <meta name="description"
+        content="SAT მათემატიკის მოსამზადებელი კურსი. ვიდეო გაკვეთილები და ყოველკვირეული ლაივ კონსულტაციები.">
+
+    <!-- Fonts: Noto Sans Georgian for compatibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CDN Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- WebGL Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <header class="site-header">
+        <div class="logo">SAT<span class="highlight">Math</span></div>
+        <nav>
+            <a href="#about">შესახებ</a>
+            <a href="#pricing">ფასები</a>
+            <a href="#contact" class="btn btn-small">რეგისტრაცია</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content text-center">
+                <h1 class="fade-in">მოემზადე <span class="text-gradient">SAT Math</span>-ისთვის</h1>
+                <p class="fade-in delay-1">სრულყოფილი ონლაინ კურსი მათთვის, ვისაც სურს მაქსიმალური ქულა.</p>
+                <a href="#pricing" class="btn btn-primary fade-in delay-2">აირჩიე პლანი</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-text text-center">სწავლების მეთოდოლოგია</h2>
+                <div class="grid-3">
+                    <div class="card reveal-card">
+                        <h3>ვიდეო გაკვეთილები</h3>
+                        <p>სრულყოფილი ვიდეო მასალა, რომელიც ფარავს ყველა საკითხს. ისწავლე შენი ტემპით, ნებისმიერ დროს.
+                        </p>
+                    </div>
+                    <div class="card reveal-card">
+                        <h3>Live კონსულტაციები</h3>
+                        <p>ყოველკვირეული ონლაინ შეხვედრები, სადაც განვიხილავთ რთულ საკითხებს და ვუპასუხებთ კითხვებს.</p>
+                    </div>
+                    <div class="card reveal-card">
+                        <h3>სტრატეგია & პრაქტიკა</h3>
+                        <p>ისწავლე არა მხოლოდ მათემატიკა, არამედ ტესტის წერის სწორი სტრატეგიები დროის დასაზოგად.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculum" class="section-padding alt-bg">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text">
+                        <h2 class="section-title reveal-text">სასწავლო პროგრამა</h2>
+                        <ul class="feature-list">
+                            <li class="reveal-item"><span>01.</span> Heart of Algebra</li>
+                            <li class="reveal-item"><span>02.</span> Problem Solving & Data Analysis</li>
+                            <li class="reveal-item"><span>03.</span> Passport to Advanced Math</li>
+                            <li class="reveal-item"><span>04.</span> Additional Topics in Math</li>
+                        </ul>
+                    </div>
+                    <div class="split-image reveal-image">
+                        <!-- Placeholder for design integrity -->
+                        <div
+                            style="width:100%; height:300px; background:linear-gradient(135deg, #f0f4f8, #e1e4e8); border-radius:8px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center reveal-text">აირჩიე პაკეტი</h2>
+                <div class="grid-3" style="justify-content: center;">
+                    <!-- Standard Plan -->
+                    <div class="card pricing-card reveal-card">
+                        <h3>სტანდარტი</h3>
+                        <div class="price">₾250<span>/თვე</span></div>
+                        <p>იდეალურია დამოუკიდებელი მეცადინეობისთვის</p>
+                        <ul class="pricing-features">
+                            <li>სრული ვიდეო კურსი</li>
+                            <li>სავარჯიშო მასალები</li>
+                            <li>ფორუმის წვდომა</li>
+                        </ul>
+                        <button class="btn btn-full select-plan" data-plan="standard">არჩევა</button>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="card pricing-card reveal-card"
+                        style="border-color: var(--accent-color); transform: scale(1.05);">
+                        <div
+                            style="background:var(--accent-color); color:white; padding:4px; font-size:0.8rem; margin:-2rem -2rem 1rem -2rem; border-radius:8px 8px 0 0;">
+                            პოპულარული</div>
+                        <h3>პრემიუმი</h3>
+                        <div class="price">₾450<span>/თვე</span></div>
+                        <p>მაქსიმალური მხარდაჭერა და შედეგი</p>
+                        <ul class="pricing-features">
+                            <li>სრული ვიდეო კურსი</li>
+                            <li>ყოველკვირეული ონლაინ გაკვეთილი</li>
+                            <li>პერსონალური გეგმა</li>
+                            <li>პირდაპირი კონსულტაცია</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full select-plan" data-plan="premium">არჩევა</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding alt-bg">
+            <div class="container">
+                <div class="form-wrapper reveal-up">
+                    <h2 class="section-title text-center">რეგისტრაცია</h2>
+                    <p class="text-center mb-large">შეავსეთ ფორმა და ჩვენ დაგიკავშირდებით</p>
+
+                    <form id="contact-form" action="https://formspree.io/f/xbjqrzkz" method="POST">
+                        <div class="input-group">
+                            <label for="plan">შერჩეული პაკეტი</label>
+                            <input type="text" id="plan" name="plan" readonly value="Standard">
+                        </div>
+                        <div class="input-group">
+                            <label for="name">სახელი, გვარი</label>
+                            <input type="text" id="name" name="name" required placeholder="პავლე პავლიაშვილი">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">ელ-ფოსტა</label>
+                            <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">ტელეფონი</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+995 555 00 00 00">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">გაგზავნა</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SAT Math Prep.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
